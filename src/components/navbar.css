@@ -1,0 +1,39 @@
+.btn{
+    margin-right: 5px;
+   border: 1px solid;
+}
+#one {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #053c0f 50%,#b7e9c1 50%);
+    border: none;
+    padding: 20px;
+    display: inline-block;
+}
+#two {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #3c0c05 50%,#eedfdb 50%);
+    border: none;
+    padding: 20px;
+    display: inline-block;
+}
+#three {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #0a053c 50%,#cbdbf3 50%);
+    border: none;
+    padding: 20px;
+    display: inline-block;
+}
+#four {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #1715157c 50%,#b6b9be 50%);
+    border: none;
+    padding: 20px;
+    display: inline-block;
+}
+#five {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, white 50%,white 50%);
+    border: none;
+    padding: 20px;
+    display: inline-block;
+}
