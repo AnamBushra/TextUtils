@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import Navbar from './components/Navbar'
 import Textform from './components/Textform';
-// import About from './components/About';
+import About from './components/About';
 import Alert from './components/Alert';
 import { useState } from 'react';
-// import { Route,Routes,BrowserRouter } from 'react-router-dom';
+import { Route,Routes,BrowserRouter } from 'react-router-dom';
 function App() {
 
   const [mode,setMode]=useState('light')
@@ -63,19 +63,19 @@ function App() {
   // }
   return (
     <>
-{/* <BrowserRouter> */}
+<BrowserRouter>
 <Navbar title="textUtils" about="About Us" mode={mode} func={handleMode} />
 <Alert alert={alert}/>
 
-{/* <Routes> */}
-  {/* <Route exact path="/" element={<Textform title="Enter Your Text Here - " mode={mode} showAlert={showAlert}/>}>
+<Routes>
+  <Route exact path="/" element={<Textform title="Enter Your Text Here - " mode={mode} showAlert={showAlert}/>}>
 
   </Route>
-  <Route exact path="/about" element={<About />} />
-</Routes> */}
-<Textform title="Enter Your Text Here - " mode={mode} showAlert={showAlert}/>
+  <Route exact path="/about" element={<About mode={mode}/>} />
+</Routes>
 
-{/* </BrowserRouter> */}
+
+</BrowserRouter>
     </>
   );
 }
