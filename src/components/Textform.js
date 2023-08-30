@@ -57,7 +57,7 @@ export default function Textform
 </div>
     <div className="container my-3">
         <h3>Your Text Summary</h3>
-        <p>{text.split(" ").filter((el)=>{return el.length!==0}).length} words, {text.length} characters</p>
+        <p>{text.split(/\s+/).filter((el)=>{return el.length!==0}).length} words, {text.length} characters</p>
         <p>{0.008*text.split(" ").filter((el)=>{return el.length!==0}).length} Minutes Read</p>
         <h2>Preview</h2>
         <p>{text.length>0?text:'Your entered text will preview here'}</p>
