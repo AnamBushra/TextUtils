@@ -1,4 +1,4 @@
-Web Fundamentals
+**Web Fundamentals**
 
 1.	What is Internet?
 Internet is connection of multiple devices (billions of devices). It is Interconnected Network.
